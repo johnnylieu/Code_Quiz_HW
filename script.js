@@ -6,23 +6,23 @@ var questionArr = [
     {
         question: "Where do style links go?",
         choices: ["<body>", "<script>", "<footer>", "<head>"],
-        correctAnswer: "<head>"
+        Answer: "<head>"
     },{
         question: "What does JS stand for?",
         choices: ["Just Saying", "Jordans", "JavaScript", "All of the above"],
-        correctAnswer: "Java Script"
+        Answer: "Java Script"
     },{
         question: "Which company developed JavaScript?",
         choices: ["AOL", "Netscape", "Microsoft", "Death Row Records"],
-        correctAnswer: "Netscape"
+        Answer: "Netscape"
     },{
         question: "Which is the symbol for 'not equal?'",
         choices: ["<(-_-')>", "^_^", "=]", "!=="],
-        correctAnswer: "!=="
+        Answer: "!=="
     },{
         question: "What is a tool used for debugging for printing content to the debugger?",
         choices: ["A sledge hammer", "Your neighbor", "Console Log", "Netscape 800 support line"],
-        correctAnswer: "Console Log"
+        Answer: "Console Log"
     },
 ]
 
@@ -80,6 +80,25 @@ function render(questions) {
         listeItem.addEventListener("click", (compare));
     })
 };
+
+// Event to compare choices with answer
+function compare(event) {
+    var element = event.target;
+
+    if (element.matches("li")) {
+        
+        var createDiv = document.createElement("div");
+        createDiv.setAttribute ("id", "createDiv");
+
+        if (element.textContent == questions[question].answer) {
+            score++;
+            createDiv.textContent = "Correct!";
+        } else {
+            secondsLeft = secondsLeft - wrong;
+            createDiv.textContent = "Incorrect! The correct answer is " + questions[question].answer;
+        }
+    }
+}
 
 // got this from my tutor
 // for (var i =0; questionArr[0].choices.length; i++) {
