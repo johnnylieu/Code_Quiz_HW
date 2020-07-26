@@ -6,8 +6,10 @@
     <!-- This is the first step in making the document responsive with scaling the items to screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- This is the style links -->
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- This is the title-->
     <title>Code Quiz</title>
@@ -17,15 +19,15 @@
     <!-- This is a wrapper -->
     <div id="wrapper">
         <!-- Div for timer -->
-        <div id="timerDiv"></div>
+        <div id="timer"></div>
         <!-- Div for quiz content -->
-        <div id="questionsDiv">
-            <h1>Coding Quiz</h1>
+        <div id="questions">
+            <h1>Code Quiz</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
                 answers will penalize your score/time by ten seconds!</p>
             <ul id="choicesUl"></ul>
             <!-- Buttons -->
-            <button id="startTime">Start Quiz</button>
+            <button id="startTime" class="fa fa-pencil-square-o">Start Quiz</button>
         </div>
 
     </div>

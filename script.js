@@ -13,21 +13,24 @@ var questionArr = [
         correctAnswer: "Java Script"
     },{
         question3: "Which company developed JavaScript?",
-        choices: ["AOL", "Netscape", "Microsoft", "Juno"],
-        correctAnswer: "<head>"
+        choices: ["AOL", "Netscape", "Microsoft", "Death Row Records"],
+        correctAnswer: "Netscape"
     },{
         question4: "Which is the symbol for 'not equal?'",
         choices: ["<(-_-')>", "^_^", "=]", "!=="],
         correctAnswer: "!=="
     },{
-        question5: "What is a tool used for debugging for printing content to the debugger?"
+        question5: "What is a tool used for debugging for printing content to the debugger?",
         choices: ["A sledge hammer", "Your neighbor", "Console Log", "Netscape 800 support line"],
         correctAnswer: "Console Log"
     },
 ]
 
-// setting score variable
+// setting variables
 var score = 0;
+var timer = document.querySelector("#timer");
+var startTime = document.querySelector("#startTime");
+
 
 for (var i =0; questionArr[0].choices.length; i++) {
     var choice = document.createElement("button");
