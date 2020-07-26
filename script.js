@@ -4,39 +4,19 @@ var questions = ["q1", "q2", "q3", "q4"];
 var questionArr = [
     {
         question1: "Where do style links go?",
-        choices: [
-            "<body>",
-            "<script>",
-            "<footer>",
-            "<head>"
-        ],
+        choices: ["<body>", "<script>", "<footer>", "<head>"],
         correctAnswer: "<head>"
     },{
         question2: "Where do style links go?",
-        choices: [
-            "<body>",
-            "<script>",
-            "<footer>",
-            "<head>"
-        ],
+        choices: ["<body>", "<script>", "<footer>", "<head>"],
         correctAnswer: "<head>"
     },{
         question3: "Where do style links go?",
-        choices: [
-            "<body>",
-            "<script>",
-            "<footer>",
-            "<head>"
-        ],
+        choices: ["<body>", "<script>", "<footer>", "<head>"],
         correctAnswer: "<head>"
     },{
         question4: "Where do style links go?",
-        choices: [
-            "<body>",
-            "<script>",
-            "<footer>",
-            "<head>"
-        ],
+        choices: ["<body>", "<script>", "<footer>", "<head>"],
         correctAnswer: "<head>"
     },
 ]
