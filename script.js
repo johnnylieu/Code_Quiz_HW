@@ -4,23 +4,23 @@
 // questions as objects
 var questionArr = [
     {
-        question1: "Where do style links go?",
+        question: "Where do style links go?",
         choices: ["<body>", "<script>", "<footer>", "<head>"],
         correctAnswer: "<head>"
     },{
-        question2: "What does JS stand for?",
+        question: "What does JS stand for?",
         choices: ["Just Saying", "Jordans", "JavaScript", "All of the above"],
         correctAnswer: "Java Script"
     },{
-        question3: "Which company developed JavaScript?",
+        question: "Which company developed JavaScript?",
         choices: ["AOL", "Netscape", "Microsoft", "Death Row Records"],
         correctAnswer: "Netscape"
     },{
-        question4: "Which is the symbol for 'not equal?'",
+        question: "Which is the symbol for 'not equal?'",
         choices: ["<(-_-')>", "^_^", "=]", "!=="],
         correctAnswer: "!=="
     },{
-        question5: "What is a tool used for debugging for printing content to the debugger?",
+        question: "What is a tool used for debugging for printing content to the debugger?",
         choices: ["A sledge hammer", "Your neighbor", "Console Log", "Netscape 800 support line"],
         correctAnswer: "Console Log"
     },
@@ -30,7 +30,10 @@ var questionArr = [
 var score = 0;
 var timer = document.querySelector("#timer");
 var startTime = document.querySelector("#startTime");
+var wrapper = document.querySelector("#wrapper");
 
+//20 seconds per question
+var secondsLeft = 101;
 
 for (var i =0; questionArr[0].choices.length; i++) {
     var choice = document.createElement("button");
@@ -44,11 +47,6 @@ function q1 () {
     var newContent = document.createTextNode("What's 1+2?");
     newDiv.appendChild(newContent);
 };
-
-// start quiz when button is clicked
-document.getElementById("startTime").addEventListener("click", function(){
-    
-  });
 
 
 // code  i might use later
