@@ -1,42 +1,35 @@
-# 04 Web APIs: Code Quiz
+## Code Quiz
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## Summary
 
-## User Story
+Once start button is clicked, quiz will begin. Each question has a limit of 20 seconds with a 5 second penalty for each wrong answer clicked.
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+Try it here: https://johnnylieu.github.io/Code_Quiz_HW/
 
-## Acceptance Criteria
+## History
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+https://github.com/johnnylieu/Code_Quiz_HW/commits/master
 
-The following animation demonstrates the application functionality:
+## Screenshots
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+This is a preview of my "About Me" page:
 
-### Review
+![About Me](AboutMePage.bmp)
 
-You are required to submit the following for review:
+This is a preview of my "Portfolio" page:
 
-* The URL of the functional, deployed application.
+![About Me](PortfolioPage.bmp)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+This is a preview of my "Contact" page:
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![About Me](ContactPage.bmp)
+
+## Credits
+Special thanks to to my tutor Bobbi Tarkany for pointing me in the right direction.
+
+https://guides.github.com/features/mastering-markdown/
+
+## License
+ 
+* © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* © UCSD Coding Bootcamp
