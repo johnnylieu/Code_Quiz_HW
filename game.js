@@ -30,11 +30,23 @@ let questions = [
         choice4: "!==",
         answer: 4
     },{
-        question: "What is a tool used for debugging for printing content to the debugger?"
+        question: "What is a tool used for debugging for printing content to the debugger?",
         choice1: "A sledge hammer",
         choice2: "Your neighbor",
         choice3: "Console Log",
         choice4: "Netscape 800 support line",
         answer: 3
     }
-]
+];
+
+const correct_bonus = 10;
+const max_questions = 3;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+}
+
+startGame();
