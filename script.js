@@ -19,6 +19,10 @@ var questionArr = [
         question4: "Which is the symbol for 'not equal?'",
         choices: ["<(-_-')>", "^_^", "=]", "!=="],
         correctAnswer: "!=="
+    },{
+        question5: "What is a tool used for debugging for printing content to the debugger?"
+        choices: ["A sledge hammer", "Your neighbor", "Console Log", "Netscape 800 support line"],
+        correctAnswer: "Console Log"
     },
 ]
 
