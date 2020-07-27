@@ -18,6 +18,11 @@ h4 {
     margin-bottom: 1rem;
 }
 
+p {
+    font-size: 14px;
+    padding: 2px;
+}
+
 h1 {
     font-size: 5.4rem;
     color: #56a5eb;

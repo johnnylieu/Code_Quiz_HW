@@ -12,22 +12,26 @@ https://github.com/johnnylieu/Code_Quiz_HW/commits/master
 
 ## Screenshots
 
-This is a preview of my "About Me" page:
+This is a preview of the landing page:
 
-![About Me](AboutMePage.bmp)
+![Index](index.bmp)
 
-This is a preview of my "Portfolio" page:
+This is a preview of the quiz:
 
-![About Me](PortfolioPage.bmp)
+![Quiz Starts](game.bmp)
 
-This is a preview of my "Contact" page:
+This is a preview of the end page:
 
-![About Me](ContactPage.bmp)
+![End of Quiz](end.bmp)
+
+This is a preview of the high scores:
+
+![high scores](highscores.bmp)
 
 ## Credits
 Special thanks to to my tutor Bobbi Tarkany for pointing me in the right direction.
 
-https://guides.github.com/features/mastering-markdown/
+I also did a ton of Googling and YouTubeing.
 
 ## License
  
