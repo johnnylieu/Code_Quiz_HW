@@ -55,6 +55,7 @@ getNewQuestion = () => {
 
     // once all questions loaded
     if(availableQuestions.length === 0 || questionCounter >= max_questions){
+    locatlStorage.setItem('mostRecentScore', score);
     //go to end page
     return window.location.assign('end.html');
     }
