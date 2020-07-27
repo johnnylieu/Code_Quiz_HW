@@ -26,7 +26,7 @@ This is a preview of the end page:
 
 This is a preview of the high scores:
 
-![high scores](highscores.bmp)
+![High Scores](highscores.bmp)
 
 ## Credits
 Special thanks to to my tutor Bobbi Tarkany for pointing me in the right direction.
