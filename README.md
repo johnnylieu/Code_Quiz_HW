@@ -2,7 +2,7 @@
 
 ## Summary
 
-Once start button is clicked, quiz will begin. Each question has a limit of 60 seconds to answer 4 questions about JavaScript. Each incorrect answer will be penalized with a 5 second deduction and each correct answer will be rewarded with 25 points for a maximum of 100 points.
+Once start button is clicked, quiz will begin. There's a limit of 60 seconds to answer 4 questions about JavaScript. Each incorrect answer will be penalized with a 5 second deduction and each correct answer will be rewarded with 25 points for a maximum of 100 points.
 
 Try it here: https://johnnylieu.github.io/Code_Quiz_HW/
 
