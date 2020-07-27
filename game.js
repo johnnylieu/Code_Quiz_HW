@@ -50,6 +50,12 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+
+    // once all questions loaded
+    if(availableQuestions.length === 0 || questionCounter >= max_questions){
+    //go to end page
+    return window.location.assign('end.html');
+    }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -65,6 +71,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+//loads new question after user clicks an answer
 choices.forEach(choice =>{
     choice.addEventListener('click', e => {
     if(!acceptingAnswers) return;
@@ -72,8 +79,16 @@ choices.forEach(choice =>{
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset['number'];
+
+    const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
     
-    getNewQuestion ();
+    selectedChoice.parentElement.classList.add(classToApply);
+
+    // time delay before going to next question so everyone can see my cool green and red colors when selecting correct/incorrect answer
+    setTimeout( () => {
+        selectedChoice.parentElement.classList.remove(classToApply);    
+        getNewQuestion ();
+    }, 200);
     });
 });
 
