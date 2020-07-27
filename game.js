@@ -57,7 +57,7 @@ getNewQuestion = () => {
 
     // once all questions loaded
     if(availableQuestions.length === 0 || questionCounter >= max_questions){
-    locatlStorage.setItem('mostRecentScore', score);
+    localStorage.setItem('mostRecentScore', score);
     //go to end page
     return window.location.assign('end.html');
     }
@@ -91,10 +91,8 @@ choices.forEach(choice =>{
 
     if(classToApply === 'correct') {
         incrementScore(correct_bonus);
-    }
-
-    if(classToApply === 'incorrect') {
-        times = times - timePenalty;
+    } else {
+        times = times - 5;
     }
     
     selectedChoice.parentElement.classList.add(classToApply);
@@ -126,6 +124,7 @@ function countDown () {
         window.location = "end.html";
         clearInterval(end);
     }
+
 }
 
 update = setInterval("countDown()", 1000);
