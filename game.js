@@ -8,6 +8,8 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let times = 60;
+let timePenalty = 5;
 
 let questions = [
     {
@@ -90,6 +92,10 @@ choices.forEach(choice =>{
     if(classToApply === 'correct') {
         incrementScore(correct_bonus);
     }
+
+    if(classToApply === 'incorrect') {
+        times = times - timePenalty;
+    }
     
     selectedChoice.parentElement.classList.add(classToApply);
 
@@ -105,5 +111,23 @@ incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
 }
+
+function countDown () {
+    times = times -1;
+    if (times < 60) {
+        time001.innerHTML = times;
+    }
+
+    if (times <1) {
+        window.clearInterval(update);
+    }
+
+    if (times <= 0) {
+        window.location = "end.html";
+        clearInterval(end);
+    }
+}
+
+update = setInterval("countDown()", 1000);
 
 startGame();
